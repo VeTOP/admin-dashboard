@@ -1,37 +1,63 @@
-body, html {
+body, html, .container {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
 
-
-.container {
-    height: 100%;
-    display: grid;
-
-    grid-template-areas: 
-    "d h h h h h"
-    "d h h h h h"
-    "d c c c c c"
-    "d c c c c c"
-    "d c c c c c"
-    "d c c c c c"
-    "d c c c c c"
-    "d c c c c c"
-    "d c c c c c";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.dashboard {
-    background-color: red;
-    grid-area: d;
+.container {
+    display: grid;
+
+    grid-template-columns: 20% auto;
+    grid-template-rows: 170px auto;
+}
+
+.sidebar {
+    grid-row: span 2;
+
+    display: grid;
+    grid-template-columns: repeat(2, 80px);
+    grid-template-rows: repeat(10, auto);
+    background-color: #957DAD;
+
+    align-items: center;
+}
+
+.sidebar * {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-decoration: none;
 }
 
 .header {
-    background-color: green;
-    grid-area: h;
+    background-color: #FFDFD3;
 }
 
 .content {
-    background-color: blue;
-    grid-area: c;
+    background-color: #E0BBE4;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    justify-self: end;
+}
+
+.privacy{
+    padding-bottom: 400px;
+}
+.dashboard {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.communities {
+    padding-bottom: 60px;
+}
+
+.sidebar a:hover {
+    color: rgb(218, 203, 203);
 }
