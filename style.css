@@ -144,7 +144,9 @@ input {
 }
 
 .first-element {
-    background-color: pink;
+    background-color: #FFDFD3;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 .first {
@@ -160,4 +162,22 @@ input {
 
 .idk {
     grid-column: span 2;
+    font-weight: bold;
+}
+
+.first-title {
+    font-weight: bold;
+}
+
+.first-text {
+    color:rgb(59, 45, 73);
+}
+
+.first-img {
+    width: 30px;
+}
+
+.heart-container {
+    display: flex;
+    justify-content: flex-end;
 }
