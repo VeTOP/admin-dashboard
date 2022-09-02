@@ -145,16 +145,20 @@ input {
 
 .first-element {
     background-color: #FFDFD3;
+    border: 5px solid #957DAD;
+    border-top: #FFDFD3;
+    border-right: #FFDFD3;
+    border-bottom: #FFDFD3;
     padding: 20px;
     border-radius: 30px;
 }
 
 .first {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-auto-columns: 2fr;
+    grid-template-columns: repeat(2, 400px);
+    grid-auto-columns: 400px;
     grid-template-rows: 30px;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 200px;
     gap: 23px;
 
     padding: 40px;
@@ -175,9 +179,41 @@ input {
 
 .first-img {
     width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .heart-container {
     display: flex;
     justify-content: flex-end;
+}
+
+.box1 {
+    background-color: #FFDFD3;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.second {
+    padding: 40px;
+}
+
+.box2 {
+    background-color: #FFDFD3;
+    padding: 20px;
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-columns: 1fr 1fr;
+
+    grid-template-rows: 100px;
+    grid-auto-rows: 100px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.txt {
+    justify-self: start;
 }
